@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h2>Nhập vào 3 cạnh a, b, c:</h2>
+<h2>Hãy Nhập vào 3 cạnh a, b, c:</h2>
     <form method="post">
         a: <input type="number" name="a" required><br><br>
         b: <input type="number" name="b" required><br><br>

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Giải phương trình bậc hai</title>
+<title> Giải phương trình bậc hai</title>
 </head>
 <body>
 <h2>Giải phương trình bậc hai: ax² + bx + c = 0</h2>
