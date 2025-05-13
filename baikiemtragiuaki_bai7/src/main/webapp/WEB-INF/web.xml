@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <!-- Đăng ký Servlet -->
+    <servlet>
+        <servlet-name>ColorServlet</servlet-name>
+        <servlet-class>controller.ColorServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ColorServlet</servlet-name>
+        <url-pattern>/ColorServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Đăng ký Filter -->
+    <filter>
+        <filter-name>ColorFilter</filter-name>
+        <filter-class>filter.ColorFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>ColorFilter</filter-name>
+        <url-pattern>/ColorServlet</url-pattern>
+    </filter-mapping>
+
+    <!-- Đăng ký Listener -->
+    <listener>
+        <listener-class>listener.RequestListener</listener-class>
+    </listener>
+
+    <!-- Thêm welcome file list -->
+    <welcome-file-list>
+        <welcome-file>color.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
